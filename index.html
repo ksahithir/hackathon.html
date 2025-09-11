@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Right Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaf6fc;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      width: 100%;
+      background: #007bff;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    /* Logo / Title */
+    .navbar .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Navigation Links */
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 750px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    /* Content padding (to avoid overlap with fixed navbar) */
+    .content {
+      padding:30px 10px;
+      
+    }
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        height:300px;
+        width:300px;
+    }
+    .card:hover {
+        box-shadow:0 8px 16px 0 rgba(0,0,0,0.2); 
+    }
+    .section1{
+        margin:10px;
+        font-family: 'Times New Roman', Times, serif;
+        box-shadow: inset;
+        gap:5px;
+        box-shadow: black 0.3;
+    }
+    .bot{
+      width:109px;
+      position: fixed;
+      height:150px;
+      border-radius: 5px;
+      bottom:10px;
+      right:20px;
+      overflow:hidden;
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" class="logo"><img style="padding:0;width:60px;height:45px;" src="https://as1.ftcdn.net/v2/jpg/04/06/92/60/1000_F_406926005_dGy1iIhhadwEGOTFJjw2q1ir7lrYjg3C.jpg"></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="second.html">Sign Up</a></li>
+    </ul>
+  </nav><br>
+
+  <!-- Page Content -->
+  <div class="content"><center>
+    <h1>Welcome to Nexus Solutions</h1></center><font size="6">
+   <marquee direction="right" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-shadow: #ffd700 3px 3px 0px;"> <p>Your AI-powered Career & Education Advisor powered by Govt..</p></marquee></font>
+  </div><br>
+  <table cellspacing="50px" style="margin: 0 10px  ;">
+    <tr aria-colspan="4">
+        <td>
+            <div class="card" style="position:relative; background: rgb(251, 232, 208); border-radius: 20px;"><br>&nbsp;&nbsp;
+                <img width="250px" height="250px" src="https://static.wixstatic.com/media/d483ae_a7b6475c227a488cb8b4e778c0c116de~mv2.png/v1/fill/w_816,h_541,al_c,q_90/d483ae_a7b6475c227a488cb8b4e778c0c116de~mv2.png"><br>
+                <div class="container">
+                    <h4><b>Career Advisor</b></h4>
+                    
+                </div>
+                <br>
+                &nbsp;
+            </div><br>
+            
+        </td>
+        <td>
+             <div class="card" style="position:relative;justify-items: center; align-items: center; background: rgb(239, 210, 175); border-radius: 20px;"><br>&nbsp;
+                <img height="250px" width="290px" src="https://images.techhive.com/images/article/2016/07/internships-ts-100669679-large.jpg"><br>
+                <div class="container">
+                    <h4><b>Internship Alloter</b></h4>
+                    
+                </div>
+                <br>
+                &nbsp;&nbsp;
+                </div>
+        </td>
+        <td>
+             <div class="card" style="position:relative;justify-items: center; align-items: center; background: bisque; border-radius: 20px;"><br>&nbsp;
+                <img height="250px" width="290px" src="https://tse3.mm.bing.net/th/id/OIP.b54HU3bQZDwR_z1wI60imgAAAA?r=0&pid=ImgDet&w=184&h=198&c=7&o=7&rm=3"><br>
+                <div class="container">
+                    <h4><b>RoadMap Counsellor</b></h4>
+                    
+                </div>
+                <br>
+                &nbsp;&nbsp;
+                </div>
+        </td>
+        <td>
+             <div class="card" style="position:relative;justify-items: center; align-items: center; background: bisque; border-radius: 20px;"><br>&nbsp;
+                <img height="250px" width="290px" src="https://islucid.com/wp-content/uploads/2023/02/9430578_4153553.jpg"><br>
+                <div class="container"><a href="ai.html">
+                    <h4><b>Virtual Interview Guide</b></h4></a>
+                    
+                </div>
+                <br>
+                &nbsp;&nbsp;
+                </div>
+        </td>
+    </tr>
+
+   </table>
+   <center><a href="second.html" target="_blank">
+    <button type="button" style="height:40px; width:150px;background-color: rgb(78, 78, 229);  border-radius: 5px; cursor: pointer;"> <b>Get Started with it</b></button></a>
+   </center>
+<div class="section1" >
+    <font size="5"><b>Why Nexus?</b></font><br>
+   <font size="4"> <ul>
+       <li>To provide detailed guidance on what each branch includes, career prospects to help students make informed decisions.</li>
+       <li>To provide a clear breakdown of each branch including its core subjects</li>
+       <li>Our AI-powered career advisor recommends suitable domains based on interests</li>
+       <li>To provide personalised skill roadmaps, study plans and resources to keep learnig structured</li>
+       <li>Our Virtual Interview simulator helps to practice with real-world interview question as AI sugests.</li>
+    </ul></font>
+
+</div>
+<div class="bot">
+    <p style="bottom:80px;right:30px;height:25px;width:160px;font-size: medium; border-radius: 6px; background-color: azure;">Hey, I am Alice!</p>
+    <a href="ai.html">
+      <img style="width:90px; height:85px;" src="https://www.travelassistant24.com/img/troby.gif" >
+    </a>
+   </div>
+</body>
+</html>
