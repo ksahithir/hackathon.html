@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: linear-gradient(aqua, rgb(162, 229, 255));
+
+    
+    }
+    .form-box {
+      width: 350px;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+    .form-box h2 {
+      margin: 0 0 20px;
+      text-align: center;
+      color: #333;
+    }
+    .input-field {
+      margin-bottom: 15px;
+    }
+    .input-field input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    
+    }
+    .input-field input:focus {
+      border-color: #2193b0;
+      box-shadow: 0 0 5px #6dd5ed;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #2193b0;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #176a84;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .or {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #8e8e8e;
+      margin: 15px 0;
+      width: 100%;
+    }
+    .or::before, .or::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #dbdbdb;
+    }
+    .or:not(:empty)::before {
+      margin-right: .75em;
+    }
+    .or:not(:empty)::after {
+      margin-left: .75em;
+    }
+    .facebook-login {
+      color: #385185;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+    .forgot-pass {
+      font-size: 12px;
+      text-decoration: none;
+      color: #00376b;
+    }
+    .signup-box {
+      margin-top: 10px;
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .signup-box a:hover(color:pink) {
+      color: #0095f6;
+      font-weight: bold;
+      text-decoration: none;
+      
+    }
+    </style>
+    
+</head>
+<body>
+
+<div class="form-box">
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Log in </h2>
+    <form>
+      
+      <div class="input-field">
+        <input type="email" placeholder="Enter Email" required>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Enter Password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form></div>
+  
+</body>
+</html>
