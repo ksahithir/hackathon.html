@@ -108,7 +108,16 @@
       
     }
   </style>
-  
+  <script language="javascript" type="text/javascript">
+    function thnks(){
+    document.write("<p style='color:red;font-weight:bold;font-size:30px;justify-items:center;'>Thanks for Signing Up</p>"+"<br/>");
+    document.write("<p style='font-size:20px; font-family:calibri;'> You will be redirected into main page</p>"+"<br/><br/>");
+    }
+    function Redirect(){
+      windows.location="third.html"
+    }
+    
+  </script>
 </head>
 <body>
 
@@ -128,7 +137,7 @@
       <div class="input-field">
         <input type="password" placeholder="Password" required>
       </div>
-      <button type="submit" class="btn">Sign up for free</button>
+      <button onclick="thnks()" type="submit" class="btn">Sign up for free</button>
       <div class="or">OR</div>
       Have an account? <br>
       <a href="login.html" class="facebook-login">Log in with Email</a>
